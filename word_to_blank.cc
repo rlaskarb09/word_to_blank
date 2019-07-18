@@ -103,7 +103,9 @@ int main (int argc, char *argv[])
         output.append(" ");
     }
 
-    cout << output;
+    ofstream output_file("output.txt");
+    output_file << output;
+    output_file.close();
   }
 
   return 0;
